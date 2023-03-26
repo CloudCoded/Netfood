@@ -1,18 +1,16 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
-  darkMode: false, // or 'media' or 'class'
+  content: [],
   theme: {
-    extend: {},
-  },
-  variants: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: '#FF6363',
+        secondary: {
+          100: '#E2E2D5',
+          200: '#888882',
+        }
+      }
+    },
   },
   plugins: [],
-  corePlugins: {
-    preflight: true,
-  },
-  mode: 'jit',
-  purge: ['./public/**/*.{html,js}'],
 }
-
